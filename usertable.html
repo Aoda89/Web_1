@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <meta charset='utf-8'>
+    <title>Пользователь</title>
+
+</head>
+<body>
+<fieldset style="max-width:50px;
+  padding:1px;
+  margin: 300px auto  ;
+border: 4px solid #101010;">
+<table >
+  <tr>
+    <th style="border: 2px solid #6e6d6d;">Фамилия</th>
+    <th style="border: 2px solid #6e6d6d;">Имя</th>
+    <th style="border: 2px solid #6e6d6d;">Отчество</th>
+    <th style="border: 2px solid #6e6d6d;">Дата рождения</th>
+    <th style="border: 2px solid #6e6d6d;">Место рождения</th>
+  </tr>
+  <tr>
+    <td style="border: 2px solid #6e6d6d;" >{{.Name}}</td>
+    <td style="border: 2px solid #6e6d6d;" >{{.SecondName}}</td>
+    <td style="border: 2px solid #6e6d6d;">{{.LastName}}</td>
+    <td style="border: 2px solid #6e6d6d;">{{.Birthday}}</td>
+    <td style="border: 2px solid #6e6d6d;">{{.PlaceOfBirth}}</td>
+  </tr>
+  <tr>
+    <th colspan="5" style="text-align:center;border: 2px solid #6e6d6d;" >Дополнительная Информация</th>
+  </tr>
+
+  <td><img src="img/бык.png"  width="80" height="92"></td>
+<td colspan="4">
+  <table style="height: 92px;width: 100%" >
+    <tr>
+  <th style="border: 2px solid #6e6d6d;width: 50%;text-align:center;" >РОСТ</th>
+  <td style="border: 2px solid #6e6d6d;width: 50%;text-align:center;" >{{.Height}}</td>
+    </tr>
+    <tr>
+    <th style="border: 2px solid #6e6d6d;width: 50%;text-align:center;">ВЕС</th>
+    <td style="border: 2px solid #6e6d6d;width: 50%;text-align:center;">{{.Weight}}</td>
+  </tr>
+  </table>
+  </table>
+</table>
+</fieldset>
+<form action="branching"method="post">
+  <button type="submit" style="position: relative;left: 50%;transform: translate(-50%, 0);">Задание 2 </button>
+</form>>
+<form action="map"method="post">
+  <button type="submit" style="position: relative;left: 50%;transform: translate(-50%, 0);">Задание 3 </button>
+</form>
+</body>
+</html>
